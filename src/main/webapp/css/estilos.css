@@ -1,0 +1,753 @@
+@import
+	url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap")
+	;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "DM Sans", sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+/*Estilos index*/
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 4em 0 0;
+	background-color: black;
+}
+
+article {
+	cursor: pointer;
+	margin: 1.5em;
+}
+
+footer {
+	background-color: black;
+}
+
+/*Menu de navegacion contenido en el header*/
+.navegacion-superior {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: rgb(41, 41, 41);
+	margin: 1.5em auto 0 auto;
+	padding: 1em 0 1em 0;
+}
+
+.navegacion-superior li {
+	display: inline-block;
+	justify-content: center;
+	padding: 1em 0 0 1.5em;
+}
+
+.navegacion-superior a {
+	text-decoration: none;
+	color: white;
+}
+
+.col-logo {
+	padding-left: 2em;
+}
+
+.col-logo p {
+	font-size: 2em;
+	color: whitesmoke;
+}
+
+.col-iconos {
+	margin-left: auto;
+	padding-right: 4em;
+}
+
+.col-iconos i {
+	font-size: 2.5em;
+	margin: 0 0.3em 0 0.3em;
+	color: white;
+	cursor: pointer;
+}
+
+.fa-search:hover {
+	color: grey;
+}
+
+.fa-facebook-f:hover {
+	color: rgb(24, 119, 242);
+	cursor: pointer;
+}
+
+.fa-whatsapp:hover {
+	color: rgb(34, 176, 126);
+	cursor: pointer;
+}
+
+.fa-instagram:hover {
+	color: rgb(209, 39, 152);
+	cursor: pointer;
+}
+
+.fa-sign-in-alt:hover {
+	color: rgb(172, 170, 170);
+}
+
+.nav-superior {
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+}
+
+.nav-superior li {
+	display: inline-block;
+	margin-left: 2em;
+}
+
+.nav-superior a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+}
+
+#navegacion-responsive {
+	display: none;
+}
+
+#boton-responsive {
+	display: none;
+}
+
+/*Estilos para slider de fotos estrenos*/
+.slider-foto-estrenos {
+	background-color: #464d61;
+	padding-top: 10em;
+}
+
+/*Estilos para la seccion de cartelera*/
+.contenedor-titulo-cartelera {
+	background-color: rgb(41, 41, 41);
+	padding-bottom: 1em;
+}
+
+.contenedor-titulo-cartelera h2 {
+	padding-top: 2em;
+	color: white;
+	padding: 2em 0 0 3em;
+}
+
+.cartelera {
+	background-color: rgb(41, 41, 41);
+	display: flex;
+	justify-content: center;
+	padding: 0em 0 15em 0;
+}
+
+.cartelera article {
+	/* padding-left: 3em;
+    margin-right: 1em;*/
+	padding-top: 1em;
+}
+
+.cartelera img {
+	margin-bottom: 1em;
+}
+
+.cartelera p {
+	text-align: center;
+	width: 100%;
+	background-color: black;
+	color: white;
+	margin: auto;
+}
+
+/*Estilos seccion footer*/
+.contenedor-footer {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 2em;
+}
+
+.derechos {
+	color: white;
+}
+
+.nav-inferior a {
+	text-decoration: none;
+	color: white;
+}
+
+.redes-sociales-inferior i {
+	color: white;
+	font-size: 2em;
+	padding-right: 1em;
+}
+/*Estilos para formulario pagina de logueo*/
+.boton-logueo {
+	background-color: lightseagreen;
+	color: white;
+}
+
+.btn-registrar {
+	background-color: rgb(22, 119, 114);
+	color: white;
+}
+
+/*Estilos para pagina de registro*/
+.btn-confirmacion-registro {
+	background-color: rgb(22, 119, 114);
+	color: white;
+}
+
+.ancla-botones-de-login {
+	text-decoration: none;
+	color: white;
+}
+
+.ancla-botones-de-login:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.ancla-botones-de.login:active {
+	text-decoration: none;
+	color: white;
+}
+
+/*Estilos cartelera*/
+
+.fondo-cartelera{
+  background-color: rgb(54, 54, 54);
+}
+.contenedor-horarios{
+background-color: rgb(85, 83, 83);
+padding: 4em;
+width: 20%;
+
+}
+.horarioCine{
+ display: flex;
+ margin-bottom: 2em;
+  width: 15%;
+  background-color: yellow;
+  padding:1em;
+color: white;
+background-color: black;
+}
+
+
+.horarios-disponibles-peliculas{
+  background-color:black;
+  width: 5%;
+}
+.horarios-disponibles-peliculas p{
+  text-align: center;
+  color: white;
+}
+.titulo-horario-cine-especificado{
+  color: white;
+  background-color: black;
+}
+
+.boton-comprar{
+  
+  background-color: black;
+  width: 10%;
+  padding: 0.6em;
+}
+
+
+
+@media screen and (max-width: 47em) {
+	.col-logo {
+		display: flex;
+		width: 100vw;
+	}
+	.col-logo p {
+		font-size: 3em;
+		margin: auto;
+		padding-bottom: 1em;
+	}
+	.col-iconos {
+		padding-bottom: 6em;
+	}
+	.col-iconos i {
+		padding-right: 1em;
+	}
+	#boton-responsive {
+		display: flex;
+		position: absolute;
+		right: 0;
+		width: 10%;
+		top: 20em;
+		padding: 0.5em;
+	}
+	#boton-responsive i {
+		font-size: 2em;
+		margin: auto;
+		color: white;
+	}
+	#button-responsive {
+		position: absolute;
+		bottom: 1em;
+		right: 0.5em;
+		padding: 1em;
+		border: none;
+	}
+	.navegacion-superior {
+		display: none;
+	}
+	#navegacion-responsive {
+		height: 60vh;
+		border: 1px solid black;
+		background-color: rgb(66, 64, 64);
+		display: none;
+		/*Por el momento la dejamos en none
+    hasta que se solucione la visibilidad del menu*/
+	}
+	#navegacion-responsive ul {
+		flex-direction: column;
+	}
+	#navegacion-responsive li {
+		width: 100vw;
+		padding: 3em 0 2.5em 3em;
+		display: flex;
+		border-bottom: 1px solid rgb(80, 78, 78);
+	}
+	#navegacion-responsive a {
+		color: white;
+		margin: auto;
+		text-decoration: none;
+	}
+	.contenedor-titulo-cartelera {
+		display: flex;
+		padding-bottom: 2em;
+	}
+	.contenedor-titulo-cartelera h2 {
+		padding: 2em 0 0 0;
+		margin: auto;
+	}
+	.cartelera {
+		flex-direction: column;
+	}
+	.cartelera p {
+		width: 50%;
+		padding-top: 0.5em;
+	}
+	.contenedor-footer {
+		display: flex;
+		flex-direction: column;
+	}
+	.derechos {
+		margin: auto;
+		padding-bottom: 1em;
+	}
+	.seccion-menu-inf {
+		margin: auto;
+		padding-bottom: 1em;
+	}
+	.redes-sociales-inferior {
+		margin: auto;
+	}
+
+	/*
+  .foto {
+    height: 40vh;
+    width: 100vw;
+  }
+*/
+}
+/*Hacer cuando pueda un @media de 36 em  para que los iconos
+del header queden bien posicionados*/
+@media screen and (max-width:37em) {
+	.col-iconos {
+		display: flex;
+		padding-bottom: 8em;
+	}
+	.col-iconos i {
+		margin: auto;
+		padding: 0 0.5em 0 0.5em;
+	}
+	#button-responsive {
+		position: absolute;
+		bottom: 0.2em;
+		right: 0.5em;
+		padding: 1em;
+		border: none;
+	}
+	
+	.slider-foto-estreno{
+	display:none;
+	}
+	
+}
+
+
+
+/*MI CUENTA */
+.contenedor-mi-cuenta {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.contenedor-mi-cuenta-opciones {
+	margin-top: 6em;
+	display: inline-block;
+	cursor: auto;
+	margin-left: 3em;
+}
+
+.contenedor-mi-cuenta-opciones a {
+	color: #fff;
+	width: 100%;
+	padding-left: 1em;
+	margin-right: 7em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+.contenedor-mi-cuenta-opciones i {
+	font-size: 1.5em;
+	width: 40px;
+	text-align: center;
+	margin: 1em;
+	color: #fff;
+	cursor: pointer;
+}
+
+.contenedor-mi-cuenta-opciones li {
+	background-color: #000;
+	margin-bottom: 25px;
+}
+
+.contenedor-mi-cuenta-opciones a:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+.fa-user:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+.fa-shopping-basket:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+.contenedor-titulo-mi-cuenta {
+	cursor: auto;
+	margin-bottom: 4em;
+	margin-left: 5em;
+}
+
+.contenedor-titulo-mi-cuenta h2 {
+	font-size: 3em;
+}
+
+.fa-user-circle {
+	cursor: auto;
+	font-size: 12em;
+}
+
+.contenedor-mi-cuenta-datos {
+	display: flex;
+	justify-content: center;
+	cursor: auto;
+}
+
+.separado {
+	width: 60%;
+}
+
+.contenedor-datos {
+	width: 100%;
+	margin-bottom: 2em;
+	margin-left: 4em;
+}
+
+.boton-modificar-datos {
+	text-align: end;
+}
+
+.contenedor-tabla-compras {
+	width: 55%;
+	cursor: auto;
+}
+
+.contenedor-titulo-compras {
+	margin-bottom: 2em;
+}
+
+
+
+
+/*MEDIAS QUERIES RODRIGO*/
+@media screen and (max-width: 47em) {
+	/*MI CUENTA */
+	article {
+		margin: 0;
+	}
+	.contenedor-mi-cuenta {
+		width: 100%;
+		margin-top: 1em;
+	}
+	.contenedor-mi-cuenta-opciones {
+		margin: 0;
+		width: 100%;
+	}
+	.contenedor-mi-cuenta-opciones ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contenedor-mi-cuenta-opciones i {
+		font-size: 1em;
+	}
+	.contenedor-mi-cuenta-opciones a {
+		font-size: 0.9em;
+	}
+	.contenedor-mi-cuenta-opciones li {
+		text-align: center;
+		width: 100%;
+	}
+	.separado {
+		width: 100%;
+	}
+	.contenedor-titulo-mi-cuenta {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 2em;
+	}
+	.fa-user-circle {
+		margin-left: 0.2em;
+	}
+	.contenedor-mi-cuenta-datos {
+		flex-direction: row;
+	}
+	.contenedor-datos {
+		margin-top: 2em;
+		
+	}
+	.boton-modificar-datos {
+		margin-right: 1.5em;
+	}
+	/*MIS COMPRAS*/
+	.contenedor-tabla-compras {
+		width: 100%;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	.contenedor-titulo-compras {
+		text-align: center;
+	}
+	/*MODIFICAR DATOS*/
+	.container h2 {
+		width: 100%;
+		text-align: center;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+	#boton-guardar {
+		margin-bottom: 1em;
+	}
+}
+
+@media screen and (max-width:37em) {
+	/*MI CUENTA */
+	article {
+		margin: 0;
+	}
+	.contenedor-mi-cuenta {
+		width: 100%;
+		margin-top: 1em;
+	}
+	.contenedor-mi-cuenta-opciones {
+		margin: 0;
+		width: 100%;
+	}
+	.contenedor-mi-cuenta-opciones ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contenedor-mi-cuenta-opciones i {
+		font-size: 1em;
+	}
+	.contenedor-mi-cuenta-opciones a {
+		font-size: 0.9em;
+	}
+	.contenedor-mi-cuenta-opciones li {
+		width: 100%;
+	}
+	.contenedor-titulo-mi-cuenta {
+		margin: 0;
+		margin-bottom: 2em;
+	}
+	.contenedor-titulo-mi-cuenta h2 {
+		text-align: center;
+	}
+	.contenedor-mi-cuenta-datos {
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: left;
+	}
+	.fa-user-circle {
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+	.contenedor-datos{
+		margin:0;
+	}
+	.datos {
+		margin-bottom: 2em;
+		margin-left: 3em;
+	}
+	.separado {
+		width: 100%;
+		flex-direction: column;
+	}
+	.boton-modificar-datos {
+		margin-top: 1em;
+		margin-right: 1em;
+	}
+	/*MODIFICAR DATOS*/
+	.container {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	/*MIS COMPRAS*/
+	.contenedor-titulo-compras h2 {
+		text-align: center;
+	}
+	.contenedor-tabla-compras {
+		width: 100%;
+	}
+}
+
+/*Estilos Ivan */
+.peliculasPrimeraFila img {
+	height: 300px;
+	margin: 40px;
+}
+
+.peliculasSegundaFila img {
+	height: 300px;
+	margin: 40px;
+}
+
+.peliculasTerceraFila img {
+	height: 300px;
+	margin: 40px;
+	margin-bottom: 40px;
+}
+
+.divRecomendaciones {
+	display: flexbox;
+	justify-content: center;
+	text-align: center;
+}
+
+.divRecomendaciones h4 {
+	margin-top: 40px;
+}
+
+
+/*PAGINA COMPRA*/
+#flex{
+    display: flex;
+}
+#division{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.agrupacion-entrada{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.entradas{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-descripcion{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo-descripcion p{
+    font-size: 12px;
+    margin-right: 1em;
+    color: #fff;
+}
+.logo{
+    margin-right: 1em;
+    width: 30%;
+    margin-bottom: 1em;
+}
+.precio-entrada{
+    width: 100%;
+    background-color: #464d61;
+}
+.precio-entrada p {
+    color: #fff;
+    margin-top: 2em;
+    text-align: center;
+}
+.precio-entrada:hover{
+    background-color:rgb(41, 41, 41);
+}
+.contenedor-entrada-general{
+    width: 42%;
+    background-color: black;
+    display: flex;
+    padding-left:1em;
+    
+}
+.contenedor-entrada-descuento{
+    width: 60%;
+    background-color:#000;
+    display: flex;
+    padding-left:1em;
+   
+    margin-right:2em;
+    margin-bottom: 2em;
+}
+.titulo-informacion-entrada p{
+    color: #fff;
+}
+
+.contenedor-informacion-pelicula{
+    border-style: solid;
+    margin-top: 120px;
+    padding: 10px;
+}
+.contenedor-promociones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-promo img{
+    width: 70%;
+}
+.boton-agregar-promocion{
+    display: block;
+    margin-left: 4em;
+}
+
+/*COMPLETAR COMPRA*/
+.formulario-compra{
+    width: 55%;
+}

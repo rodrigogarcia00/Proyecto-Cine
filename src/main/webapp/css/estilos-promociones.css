@@ -1,0 +1,52 @@
+
+/* Estilos para la pagina de promociones */
+.img-promo{
+	height: 25em;
+	width: 20em;
+}
+
+.descripcionPromo{
+	margin-right: 8em;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+
+.contenedor-promo{
+	margin-top: 5em;
+}
+
+.contenedor-newsletter{
+	margin-top: 6em;
+	margin-bottom: 4em;	
+} 
+
+.slider-tajetas{
+	width: 500px;
+	height: 400px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+.contenedor-slider-tarjetas{
+	 width: 500px;
+	 height: 400px;
+}
+
+.tarjetas-promociones{
+	width: 20rem;
+	height: 25rem;
+}
+
+.img-tarjeta-promo{
+	height: 20rem;	
+}
+
+
+.confirmacion-newsletter{
+	margin-right: 15em;
+	margin-left: 15em;
+	margin-top: 7em;
+	margin-bottom: 15em;	
+}
+
